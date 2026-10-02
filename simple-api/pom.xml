@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>21</java.version>
 		<jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
-		<testcontainers.version>1.20.4</testcontainers.version>
+		<testcontainers.version>1.21.4</testcontainers.version>
 		<validation.version>3.1.0</validation.version>
 	</properties>
 
@@ -82,6 +82,11 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>5.0.0.4389</version>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
